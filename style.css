@@ -136,6 +136,13 @@ body,* {
     padding-bottom: 15px;
 
 }
+
+.icon-number{
+    background-color: #ffff;
+    font-size: 21px;
+    color: #454851;
+}
+
 .text-btn{
     background-color: #F31131;
     color: #FFFFFF;
@@ -143,8 +150,10 @@ body,* {
     line-height: 1.5;
     font-family: "kepler", serif;
     text-transform: uppercase;
-    border-radius: 20%;
+    border-radius: 20px;
     text-align: center;
     padding: 10px 20px;
     align-self: flex-start;
+    border: none;
+    cursor: pointer;
 }
