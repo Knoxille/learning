@@ -128,7 +128,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    flex: 1 0 auto;
 }
 
 .ideas__card:last-child{
@@ -136,13 +135,14 @@ body{
 }
 
 .ideas__cards img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+
 
 }
 
 .ideas__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .ideas__caption{
@@ -150,7 +150,6 @@ body{
     min-width: 250px;
 
     position: absolute;
-    padding: 20px;
 
     background-color: #ffffff;
     top:60%;
@@ -161,7 +160,8 @@ body{
     border: 1px solid;
     font-size: 18px;
     font-weight: 700;
-    padding: 20px;
+    padding: 10px 20px;
+    margin: 15px;
 
 }
 
@@ -173,27 +173,29 @@ body{
     font-family: "kepler", serif;
     margin-top: 40px;
 }
-.locations__title{}
-.locations__separator{}
 
-.locations__cards{
+
+.cards{
     display: flex;
     flex-wrap: wrap;
 
 }
-.locations__card{
+.cards__inner{
     display: flex;
     flex-direction: row;
     background-color: #FFFFFF;
     margin-top: 20px;
     margin-right: 20px;
 }
-
-.locations__card:last-child{
+.cards__inner:nth-child(2n){
     margin-right: 0;
 }
-.locations__image{}
-.locations__text{
+
+/*.cards__inner:last-child{*/
+    /*margin-right: 0;*/
+/*}*/
+
+.cards__text{
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
@@ -201,26 +203,26 @@ body{
     object-fit: cover;
     box-sizing: border-box;
 }
-.locations__subtitle{
+.cards__title{
     font-size: 24px;
     font-weight: 600;
     text-align: start;
     padding-bottom: 10px;
 }
-.locations__item{
+.cards__item{
     display: flex;
     flex-direction: column;
     flex: 1 0 auto;
 }
-.locations__paragraph{
-    font-size: 13px;
+.cards__paragraph{
+    font-size: 14px;
     line-height: 1.5;
     font-family: "kepler", serif;
     color: #454851;
     text-align: start;
     padding-bottom: 15px;
 }
-.locations__icons{
+.cards__icons{
     display: flex;
     flex-direction: row;
 
@@ -228,10 +230,9 @@ body{
     color: #454851;
     padding-bottom: 25px;
 }
-.locations__icons img{
-    font-size: 18px;
-}
+
 .icon__images{
+    font-size: 18px;
     padding-right: 15px;
 }
 .icon{
@@ -241,7 +242,7 @@ body{
 .icon__images:last-child{
     padding-right: 0;
 }
-.locations__btn{
+.cards__btn{
     background-color: #F31131;
     color: #FFFFFF;
     font-size: 16px;
