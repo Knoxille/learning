@@ -1,0 +1,268 @@
+/*========= обнуление  =========*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+*, *:before, *:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus, :active{
+    outline: none;
+}
+
+a:focus, a:active{
+    outline: none;
+}
+
+nav, footer, header,aside{
+    display: block;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{
+    font-family: inherit;
+}
+
+input::-ms-clear{
+    display: none;
+}
+button{
+    cursor: pointer;
+}
+
+button::-moz-focus-inner{
+    padding: 0;
+    margin: 0;
+
+}
+
+a, a:visited{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+img{
+    vertical-align: top;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-size: inherit;
+    font-weight: 400;
+}
+
+/*========= body  =========*/
+
+
+body{
+    background-color: #ECF0F1;
+
+}
+
+/*========= wrapper  =========*/
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px 115px;
+}
+
+/*========= ideas  =========*/
+
+.ideas{
+    display: flex;
+    flex-direction: column;
+    font-family: "kepler", serif;
+
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.title{
+    font-size: 48px;
+    text-align: center;
+    color: #171D1C;
+    font-weight: 700;
+
+}
+.separator{
+    margin: 20px 0;
+}
+
+.ideas__cards{
+    display: flex;
+    flex: 0 1 33.333%;
+}
+
+.ideas__card{
+    position: relative;
+    margin-right: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.ideas__card:last-child{
+    margin-right: 0;
+}
+
+.ideas__cards img{
+
+
+}
+
+.ideas__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ideas__caption{
+    display: block;
+    min-width: 250px;
+
+    position: absolute;
+
+    background-color: #ffffff;
+    top:60%;
+    z-index: 3;
+
+}
+.ideas__text{
+    border: 1px solid;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 20px;
+    margin: 15px;
+
+}
+
+/*========= locations  =========*/
+
+.locations{
+    display: flex;
+    flex-direction: column;
+    font-family: "kepler", serif;
+    margin-top: 40px;
+}
+
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.cards__inner{
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.cards__inner:nth-child(2n){
+    margin-right: 0;
+}
+
+/*.cards__inner:last-child{*/
+    /*margin-right: 0;*/
+/*}*/
+
+.cards__text{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    padding: 15px;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+.cards__title{
+    font-size: 24px;
+    font-weight: 600;
+    text-align: start;
+    padding-bottom: 10px;
+}
+.cards__item{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+}
+.cards__paragraph{
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: "kepler", serif;
+    color: #454851;
+    text-align: start;
+    padding-bottom: 15px;
+}
+.cards__icons{
+    display: flex;
+    flex-direction: row;
+
+    font-size: 16px;
+    color: #454851;
+    padding-bottom: 25px;
+}
+
+.icon__images{
+    font-size: 18px;
+    padding-right: 15px;
+}
+.icon{
+    padding-right: 0;
+}
+
+.icon__images:last-child{
+    padding-right: 0;
+}
+.cards__btn{
+    background-color: #F31131;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "kepler", serif;
+    text-transform: uppercase;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px 20px;
+    align-self: flex-start;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
